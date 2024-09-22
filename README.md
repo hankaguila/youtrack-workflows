@@ -1,8 +1,9 @@
 # YouTrack Workflows++
 
-This project offers custom workflows for _YouTrack 2024.3.44799_, addressing
-gaps in native functionality. It extends YouTrack's capabilities by automating
-tasks not yet supported in the platform.
+This project offers custom workflows for
+_[YouTrack](https://www.jetbrains.com/help/youtrack/server/introduction-to-youtrack-server.html)
+2024.3.44799_, addressing gaps in native functionality. It extends YouTrack's
+capabilities by automating tasks not yet supported in the platform.
 
 ## Workflows
 
