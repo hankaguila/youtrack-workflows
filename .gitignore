@@ -1,0 +1,12 @@
+# Exclude
+*
+
+# Include
+!src
+!src/**
+!.gitignore
+!.prettierrc.json
+!package.json
+!README.md
+!.npmrc
+!LICENSE

@@ -1,0 +1,9 @@
+{
+  "name" : "youtrack-workflow-due-in",
+  "title" : "Due In",
+  "description": "Update Due In based on Due Date",
+  "version" : "1.0.0",
+  "vendor" : {
+    "name" : "hankaguila"
+  }
+}

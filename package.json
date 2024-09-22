@@ -1,0 +1,15 @@
+{
+  "name": "youtrack-workflows",
+  "version": "1.0.0",
+  "author": "hankaguila",
+  "type": "commonjs",
+  "scripts": {},
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@jetbrains/youtrack-scripting-api": "^2022.1.46592"
+  }
+}
