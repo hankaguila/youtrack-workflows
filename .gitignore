@@ -9,6 +9,7 @@
 !.gitignore
 !.prettierrc.json
 !package.json
+!CHANGELOG.md
 !README.md
 !.npmrc
 !LICENSE
