@@ -1,7 +1,6 @@
 {
   "name" : "youtrack-workflow-bind-parent-to-subtasks",
   "title" : "Bind parent to subtasks",
-  "description": "Bind parent state to the least progressed subtask",
   "version" : "1.0.0",
   "visual" : true,
   "vendor" : {

@@ -1,6 +1,6 @@
 {
   "name" : "youtrack-workflow-block-unresolved-deps",
-  "title" : "Block issue resolution if dependency is unresolved",
+  "title" : "Block unresolved deps",
   "version" : "1.0.0",
   "vendor" : {
     "name" : "Hank Aguila"
