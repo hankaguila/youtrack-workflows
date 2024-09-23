@@ -2,27 +2,10 @@ const entities = require("@jetbrains/youtrack-scripting-api/entities");
 
 exports.rule = entities.Issue.onChange({
   title: "Update Due In based on Due Date",
-  cron: "0 0 0 ? * MON-SUN",
+  cron: "0 0 0/6 * * ?", // Every 6 hours (12 AM, 6 AM, 12 PM, 6 PM)
 
   guard: function (ctx) {
-    const logger = new Logger(ctx.traceEnabled);
-
-    function checkStateChanged() {
-      return (
-        ctx.issue.fields.isChanged(ctx.DueDate) ||
-        ctx.issue.fields.isChanged(ctx.DueIn)
-      );
-    }
-
-    try {
-      return checkStateChanged();
-    } catch (err) {
-      if (err?.message?.includes("has no value")) {
-        logger.error("Failed to execute guard", err);
-        return false;
-      }
-      throw err;
-    }
+    return true; // Always allow the action
   },
 
   action: function (ctx) {
