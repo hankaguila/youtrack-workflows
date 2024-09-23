@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.0 - 2024-09-23
+
+### Added
+
+- **block-unresolved-deps**: Blocks issue resolution if any dependency is
+  unresolved. Unlike the default **Dependencies** workflow, this workflow
+  doesn't break if the resolved state is not named _Fixed_.
+
 ## v1.0.1 - 2024-09-23
 
 ### Fixed
