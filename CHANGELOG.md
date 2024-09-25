@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.1 - 2024-09-25
+
+### Changed
+
+- **due-in**: Reset _Due In_ to empty value when the issue is resolved
+
 ## v1.1.0 - 2024-09-23
 
 ### Added

@@ -28,7 +28,9 @@ exports.rule = entities.Issue.onChange({
         (normalizedDueDate - normalizedNow) / (1000 * 60 * 60 * 24) // milliseconds -> days
       );
 
-      if (daysFromNow < 0) {
+      if (ctx.issue.isResolved) {
+        ctx.issue.fields.DueIn = "";
+      } else if (daysFromNow < 0) {
         ctx.issue.fields.DueIn = "Overdue";
       } else if (daysFromNow === 0) {
         ctx.issue.fields.DueIn = "Today";
@@ -38,7 +40,7 @@ exports.rule = entities.Issue.onChange({
         ctx.issue.fields.DueIn = daysFromNow + "d";
       }
     } else {
-      ctx.issue.fields.DueIn = "--";
+      ctx.issue.fields.DueIn = "";
     }
   },
 
